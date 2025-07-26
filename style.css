@@ -5,6 +5,75 @@
   padding-left: 150px;
   padding-right: 150px;
 }
+body{
+  margin: 0;
+}
+/* .header{
+  width: 1140px;
+} */
+.head-section{
+  width: 1140px;
+    margin: 120px 150px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flower-head img{
+    width: 100%;
+}
+.flower-head{
+    
+    
+}
+.plant-title1, .plant-title2{
+  font-size: 3rem;
+}
+.head-title, .head-title2{
+    font-size: 4rem;
+}
+.head-title2, .plant-title1{
+    color: #E95A08;
+}
+.head-description{
+    font-weight: 1.4rem;
+}
+/* plants -cart */
+.main-cart-container{
+  width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.main-cart{
+  text-align: center;
+    width: 270px;
+    margin-top: 50px;
+    
+}
+.main-cart img{
+  width: 270px;
+}
+
+.plants-cart{
+    text-align: center;
+}
+.plant-description{
+    margin: 0px 276px;
+}
+.cart-description{
+   text-align: center;
+    color: #111111;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.cart-title{
+    color: #111111;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
 
 .logo {
   
@@ -13,8 +82,18 @@
     color: rgba(137, 135, 161, 1);
     
 }
+.text-gray2{
+    color: rgba(0, 0, 0, 0.5);
+}
 .black{
     color: black;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    width: 270px;
+    border: none;
+    padding: 5px 3px;
 }
 
 .nav-links {
@@ -35,15 +114,44 @@
   border: 2px solid black;
 }
 
+
 /* Hide all except cart on small screens */
 @media (max-width: 768px) {
   .hide-on-mobile {
     display: none;
   }
 .nav-container{
-    padding: 0;
+    padding: 5px;
 }
   .nav-links {
     gap: 0;
   }
+  .head-section{
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+.main-cart-container{
+  width: 100%;
+}
+  .flower-head img, .plant-description{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+.main-cart-container{
+  margin: 0;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  justify-content: center;
+}
+.main-cart{
+  margin-left: 0px;
+}
+.main-cart img, .btn-primary{
+  width: 170px;
+}
+.plants-cart{
+    text-align: center;
 }
