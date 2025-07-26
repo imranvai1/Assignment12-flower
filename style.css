@@ -26,7 +26,7 @@ body{
     
     
 }
-.plant-title1, .plant-title2{
+.plant-title1, .plant-title2, .love-plants-title{
   font-size: 3rem;
 }
 .head-title, .head-title2{
@@ -114,6 +114,24 @@ body{
   border: 2px solid black;
 }
 
+/* love plant */
+.love-plant-header{
+  width: 1140px;
+  height: 600px;
+  margin: 210px 150px 130px;
+  display: flex;
+}
+.love-plant-description-ind{
+  font-size: 1.4rem;
+  color: rgba(137, 135, 161, 1);
+  padding-top: 20px;
+}
+.love-plants-title{
+  padding-left: 20px;
+}
+.love-plant-description-ind{
+  gap: 20px;
+}
 
 /* Hide all except cart on small screens */
 @media (max-width: 768px) {
