@@ -1,0 +1,17 @@
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 150px 0px 150px;
+}
+nav > img{
+    width: 135px;
+    height: 82px;
+}
+.Nav-link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
